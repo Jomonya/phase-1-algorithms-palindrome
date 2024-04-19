@@ -1,6 +1,21 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  word= word.toLowerCase().replace(/[^a-z]/g,'');
 }
+let left = 0;
+let right = str.length - 1;
+
+while (left < right) {
+  if (str[left] !== str[right]) {
+    return false;
+  }
+  left++;
+  right--;
+}
+
+return true;
+
+
 
 /* 
   Add your pseudocode here
